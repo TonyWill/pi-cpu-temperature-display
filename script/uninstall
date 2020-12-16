@@ -1,0 +1,15 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "=> Stopping temperature display...\n"
+sudo update-rc.d temperature-display.sh remove
+sudo /etc/init.d/temperature-display.sh stop
+
+echo "=> Removing temperature display...\n"
+sudo rm -rf /usr/local/bin/temperature-display.py 
+sudo rm -rf /etc/init.d/temperature-display.sh 
+
+echo "Temperature display uninstalled.\n"

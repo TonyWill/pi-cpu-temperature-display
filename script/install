@@ -1,0 +1,18 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo "=> Installing temperature display...\n"
+sudo cp temperature-display.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/temperature-display.py
+
+echo "=> Starting temperature display...\n"
+sudo cp temperature-display.sh /etc/init.d/
+sudo chmod +x /etc/init.d/temperature-display.sh
+
+sudo update-rc.d temperature-display.sh defaults
+sudo /etc/init.d/temperature-display.sh start
+
+echo "Temperature-display installed.\n"
