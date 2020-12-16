@@ -4,15 +4,15 @@ set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=> Installing temperature display...\n"
-sudo cp temperature-display.py /usr/local/bin/
-sudo chmod +x /usr/local/bin/temperature-display.py
+echo "=> Installing pi cpu temperature display...\n"
+sudo cp pi-cpu-temperature-display.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/pi-cpu-temperature-display.py
 
-echo "=> Starting temperature display...\n"
-sudo cp temperature-display.sh /etc/init.d/
-sudo chmod +x /etc/init.d/temperature-display.sh
+echo "=> Starting pi cpu temperature display...\n"
+sudo cp pi-cpu-temperature-display.sh /etc/init.d/
+sudo chmod +x /etc/init.d/pi-cpu-temperature-display.sh
 
-sudo update-rc.d temperature-display.sh defaults
-sudo /etc/init.d/temperature-display.sh start
+sudo update-rc.d pi-cpu-temperature-display.sh defaults
+sudo /etc/init.d/pi-cpu-temperature-display.sh start
 
-echo "Temperature-display installed.\n"
+echo "pi-cpu-temperature-display installed.\n"

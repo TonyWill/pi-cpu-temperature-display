@@ -1,17 +1,17 @@
-# temperature-display
+# pi-cpu-temperature-display
 Show raspberry pi running CPU temperature on tm1637 display at startup
 
 ## Installation
 
 1. [Connect to your Raspberry Pi via SSH](https://howchoo.com/g/mgi3mdnlnjq/how-to-log-in-to-a-raspberry-pi-via-ssh)
-1. Clone this repo: `git clone https://github.com/TonyWill/temperature-display`
-1. Run the setup script: `./temperature-display/script/install`
+1. Clone this repo: `git clone https://github.com/TonyWill/pi-cpu-temperature-display`
+1. Run the setup script: `./pi-cpu-temperature-display/script/install`
 
 ## Uninstallation
 
 If you need to uninstall the temperature display script in order to use the GPIOs for another project or something:
 
-1. Run the uninstall script: `./temperature-display/script/uninstall`
+1. Run the uninstall script: `./pi-cpu-temperature-display/script/uninstall`
 
 ## Global requirements
 
