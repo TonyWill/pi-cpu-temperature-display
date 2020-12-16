@@ -9,7 +9,7 @@ Show raspberry pi running CPU temperature on tm1637 display at startup
 
 ## Uninstallation
 
-If you need to uninstall the power button script in order to use GPIO3 for another project or something:
+If you need to uninstall the temperature display script in order to use the GPIOs for another project or something:
 
 1. Run the uninstall script: `./temperature-display/script/uninstall`
 
