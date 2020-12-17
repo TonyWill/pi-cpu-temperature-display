@@ -24,10 +24,10 @@ instead of just 'pip3 install' which would do a local user installation.
 ## Hardware
 The default connections used for the TM1637 display are:
 ````
-GND - pin 6
-VCC - pin 12 GPIO 18
-SCL - pin 8 GPIO 14
-SDA - pin 10 GPIO 15
+GND - pin 39
+VCC - pin 33 GPIO 13
+SCL - pin 35 GPIO 19
+SDA - pin 37 GPIO 26
 ````
 But none of these pins are mandatory so you can refer to the [raspberry pi pins](https://pinout.xyz/) if you wish to change them.
 
