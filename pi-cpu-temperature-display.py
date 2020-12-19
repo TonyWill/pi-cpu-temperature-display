@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import tm1637   #pip3 install raspberrypi-tm1637
+import tm1637   #sudo pip3 install raspberrypi-tm1637
 import time
 from gpiozero import CPUTemperature, LED 
 
