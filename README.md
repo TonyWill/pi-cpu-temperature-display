@@ -17,6 +17,7 @@ If you need to uninstall the temperature display script in order to use the GPIO
 
 In order for this code to run at startup which would make root the owner, its dependencies must be installed system-wide using: 
 ````shell
+sudo apt install python3-gpiozero
 sudo pip3 install raspberrypi-tm1637
 ````
 instead of just 'pip3 install' which would do a local user installation.
